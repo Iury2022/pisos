@@ -1,0 +1,39 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 64px auto;
+  width: 62.5%;
+}
+
+form *, #resultado span {
+  display: block;
+}
+
+form label, #resultado span {
+  margin-bottom: 4px;
+}
+
+form input, form select {
+  margin-bottom: 16px;
+  border: none;
+  border-bottom: 1px solid gray;
+  padding: 8px 16px;
+  outline: none;
+}
+
+form button {
+  background-color: green;
+  border: none;
+  width: 128px;
+  height: 32px;
+  border-radius: 16px;
+  font-size: 106.25%;
+  font-weight: bold;
+  color: black;
+}
+
+#resultado {
+  margin-top: 16px;
+}

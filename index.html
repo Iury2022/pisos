@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Calculadora de pisos</title>
+  </head>
+  <body>
+    <h1>Calculadora de pisos</h1>
+
+    <form onsubmit="calcular(event)">
+      <label for="largura">Largura</label>
+      <input required type="number" step="0.01" min="0.01" id="largura" placeholder="Largura" />
+      
+      <label for="comprimento">Comprimento</label>
+      <input required type="number" step="0.01" min="0.01" id="comprimento" placeholder="Comprimento" />
+      
+      <label for="quantidade">Quantidade</label>
+      <input required type="number" min="1" id="quantidade" placeholder="Quantidade" />
+      
+      <label for="preco">Tipo de piso</label>
+      <select id="preco">
+        <option value="35">Cerâmica</option>
+        <option value="125">Porcelanato</option>
+        <option value="330">Madeira</option>
+      </select>
+
+      <button id="calcularButton">Calcular</button>
+    </form>
+
+    <div id="resultado">
+      <span id="area-total"></span>
+      <span id="valor-total"></span>
+    </div>
+    
+    <script src="src/main.ts"></script>
+  </body>
+</html>
